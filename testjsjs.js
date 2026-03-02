@@ -13,7 +13,6 @@ let currentFilter = 'all';
 function renderTasks() {
     tasksContainer.innerHTML = '';
     
-    
     let filteredTasks = tasks;
     if (currentFilter === 'completed') {
         filteredTasks = tasks.filter(task => task.completed === true);
@@ -41,7 +40,7 @@ function renderTasks() {
         const buttonsDiv = document.createElement("div");
         
         const doneBtn = document.createElement("button");
-        doneBtn.textContent = "Done" ;
+        doneBtn.textContent = "Done";
         doneBtn.style.backgroundColor = "#4CAF50";
         doneBtn.style.color = "white";
         doneBtn.style.border = "none";
@@ -72,7 +71,6 @@ function renderTasks() {
         taskDiv.appendChild(taskText);
         taskDiv.appendChild(buttonsDiv);
         tasksContainer.appendChild(taskDiv);
-        
     });
 }
 
@@ -130,9 +128,6 @@ function showPending() {
 }
 
 inpBtn.addEventListener("click", addTask);
-taskInp.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") addTask();
-});
 
 allBtn.addEventListener("click", showAll);
 completedBtn.addEventListener("click", showCompleted);
