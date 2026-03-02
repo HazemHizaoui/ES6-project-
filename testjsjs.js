@@ -40,7 +40,7 @@ function renderTasks() {
         const buttonsDiv = document.createElement("div");
         
         const doneBtn = document.createElement("button");
-        doneBtn.textContent = "Done";
+        doneBtn.textContent = "Donee";
         doneBtn.style.backgroundColor = "#4CAF50";
         doneBtn.style.color = "white";
         doneBtn.style.border = "none";
@@ -50,7 +50,7 @@ function renderTasks() {
         doneBtn.style.cursor = "pointer";
         
         const deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "Delete";
+        deleteBtn.textContent = "Deleteee";
         deleteBtn.style.backgroundColor = "#f44336";
         deleteBtn.style.color = "white";
         deleteBtn.style.border = "none";
@@ -134,3 +134,4 @@ completedBtn.addEventListener("click", showCompleted);
 pendingBtn.addEventListener("click", showPending);
 
 showAll();
+
