@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <style>
+        * {
+            font-weight: bold;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .container {
+            gap: 10px;
+            background-color: #f0f0f0;
+            display: flex;              
+            justify-content: center;    
+            align-items: center;        
+            height: 70px;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            cursor: pointer;
+            background-color: #f0f0f0;
+            padding: 8px 16px;     
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        input {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        .task-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .tache {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .afficher {
+            margin-top: 20px;
+            padding: 10px;
+            max-width: 800px;  
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;   
+            justify-content: center; 
+            gap: 15px;               
+            flex-wrap: wrap;        
+            background-color: #fafafa;
+            min-height: 100px;       
+            border-radius: 5px;
+        }
+        
+        .task-item {
+            background-color: #e6e6e6;
+            padding: 8px 15px;
+            border-radius: 20px;      
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ES6 projet</h1>
+    <div class="container">
+        <button style="background-color: red;">toutes</button>
+        <button style="background-color: green;">terminees</button>
+        <button style="background-color: yellow;">en cours</button>
+    </div>
+    
+    <div class="task-section">
+        <div class="tache">
+            <label for="taskInput">tache</label>
+            <input type="text" id="task" placeholder="ecrit un tache...">
+            <button id="btn">add</button>
+        </div>
+    </div>
+
+    <div class="afficher">
+        
+    </div>
+
+    <script src="testjsjs.js"></script>
+</body>
+</html>
